@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A3291951DBE1802009BB7D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3291941DBE1802009BB7D0 /* main.m */; };
+		0A32919D1DBE184A009BB7D0 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A32919C1DBE184A009BB7D0 /* Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		0A3291911DBE1802009BB7D0 /* Utility */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Utility; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3291941DBE1802009BB7D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A32919B1DBE184A009BB7D0 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		0A32919C1DBE184A009BB7D0 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		0A4BE63A1DBF0B58006DE67E /* fileinteger.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileinteger.txt; sourceTree = "<group>"; };
+		0A4BE63B1DBF0B81006DE67E /* fileString.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileString.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				0A3291941DBE1802009BB7D0 /* main.m */,
+				0A32919B1DBE184A009BB7D0 /* Utility.h */,
+				0A4BE63B1DBF0B81006DE67E /* fileString.txt */,
+				0A32919C1DBE184A009BB7D0 /* Utility.m */,
+				0A4BE63A1DBF0B58006DE67E /* fileinteger.txt */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -118,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A32919D1DBE184A009BB7D0 /* Utility.m in Sources */,
 				0A3291951DBE1802009BB7D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +249,7 @@
 				0A32919A1DBE1802009BB7D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

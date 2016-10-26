@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface RegularExpression : NSObject
-
+-(void)regularExpression:(NSString *)s;
 @end
