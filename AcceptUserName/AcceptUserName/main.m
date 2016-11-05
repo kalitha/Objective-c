@@ -17,7 +17,9 @@ int main(int argc, const char * argv[]) {
         
         //converting character array into string
         NSString *s=[NSString stringWithCString:name encoding:NSASCIIStringEncoding];
-        
+        if([s length]<3)
+            NSLog(@"please enter the name having more than 3 characters");
+        else
         //printing the username in the form of string
         NSLog(@"the username is %@",s);
     }

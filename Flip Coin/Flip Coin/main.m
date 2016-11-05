@@ -17,6 +17,7 @@ int main(int argc, const char * argv[]) {
         int tail = 0;
         NSLog(@"Enter number of times to flip");
         scanf("%d",&n);
+        if(n>0){
         while (i<n)
         {
        double num=drand48();
@@ -36,7 +37,9 @@ int main(int argc, const char * argv[]) {
         double perc1 = (double)tail/n*100;
         NSLog(@"Head: %d%c",(int)perc,'%');
         NSLog(@"Tail: %d%c",(int)perc1,'%');
-        
+        }
+        else
+            NSLog(@"entered number is not a positive number");
     }
     return 0;
 }

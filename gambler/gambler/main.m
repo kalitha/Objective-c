@@ -7,22 +7,22 @@
 // Purpose: Print Number of Wins and Percentage of Win and Loss in gambler game
 
 #import <Foundation/Foundation.h>
-#import "gamble.h"
+#import "Gamble.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int trial;
-        int goal;
-        int stake;
-        gamble *g=[[gamble alloc]init];
-        NSLog(@"enter no. of trials");
-              scanf("%d",&trial);
-        NSLog(@"enter no. of goal");
-        scanf("%d",&goal);
-        NSLog(@"entre no. of stake");
-        scanf("%d",&stake);
+        Gamble *gamble = [[Gamble alloc]init];
         
-        [g game:stake goalname:goal trialname:trial];
+        int stake,goal,trials;
+        //Taking user input
+        NSLog(@"Enter the stake");
+        scanf("%d",&stake);
+        NSLog(@"Enter the goal");
+        scanf("%d",&goal);
+        NSLog(@"Enter the trial");
+        scanf("%d",&trials);
+        
+        [gamble gambleItwithStake:stake andGoal:goal andTrials:trials];
         
               
         

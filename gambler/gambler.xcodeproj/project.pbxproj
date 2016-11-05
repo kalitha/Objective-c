@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70F0EC0A1DAE3B1000E03F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0EC091DAE3B1000E03F8C /* main.m */; };
-		70F0EC121DAE3B3400E03F8C /* gamble.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0EC111DAE3B3400E03F8C /* gamble.m */; };
+		70F0EC121DAE3B3400E03F8C /* Gamble.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0EC111DAE3B3400E03F8C /* Gamble.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		70F0EC061DAE3B1000E03F8C /* gambler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gambler; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F0EC091DAE3B1000E03F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		70F0EC101DAE3B3400E03F8C /* gamble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamble.h; sourceTree = "<group>"; };
-		70F0EC111DAE3B3400E03F8C /* gamble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gamble.m; sourceTree = "<group>"; };
+		70F0EC101DAE3B3400E03F8C /* Gamble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gamble.h; sourceTree = "<group>"; };
+		70F0EC111DAE3B3400E03F8C /* Gamble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gamble.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				70F0EC091DAE3B1000E03F8C /* main.m */,
-				70F0EC101DAE3B3400E03F8C /* gamble.h */,
-				70F0EC111DAE3B3400E03F8C /* gamble.m */,
+				70F0EC101DAE3B3400E03F8C /* Gamble.h */,
+				70F0EC111DAE3B3400E03F8C /* Gamble.m */,
 			);
 			path = gambler;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F0EC0A1DAE3B1000E03F8C /* main.m in Sources */,
-				70F0EC121DAE3B3400E03F8C /* gamble.m in Sources */,
+				70F0EC121DAE3B3400E03F8C /* Gamble.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +245,7 @@
 				70F0EC0F1DAE3B1000E03F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

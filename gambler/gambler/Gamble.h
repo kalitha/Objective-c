@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface gamble : NSObject
--(void)game:(int)stake goalname:(int)goal trialname:(int)trial;
+@interface Gamble : NSObject
+-(void)gambleItwithStake:(int)stake andGoal:(int)goal andTrials:(int)trial;
 @end
