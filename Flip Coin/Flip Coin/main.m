@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
         if(n>0){
         while (i<n)
         {
-       double num=drand48();
+            double num=drand48();
             //NSLog(@"%f",num);
             if (num< 0.5)
             {

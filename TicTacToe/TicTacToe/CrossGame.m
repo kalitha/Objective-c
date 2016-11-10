@@ -32,18 +32,27 @@
 }
 
 //FOR PUTTING THE MARK ON A SPECIFIC POSITION OF A TicTacToe GRID
--(BOOL)addElements:(char [3][3])arr1 withNum:(char)num1 playerName:(NSString *)name
+-(BOOL)addElements:(char [3][3])arr1 withNum:(char)num1 playerName:(NSString *)name playerIndex:(int)index
 {
     int num;
-    // NSLog(@"Enter your choice");
-    scanf("%d",&num);
+    if (index == 2)
+    {
+        num = arc4random_uniform(9);
+    }
+    else
+    {
+        // NSLog(@"Enter your choice");
+        scanf("%d",&num);
+    }
+    
+    
     switch (num)
     {
         case 1:
             if (arr1[0][0] == '1' || arr1[0][0] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             } else {
                 arr1[0][0] = num1;
@@ -55,7 +64,7 @@
             if (arr1[0][1] == '1' || arr1[0][1] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             }
             else{
@@ -68,7 +77,7 @@
             if (arr1[0][2] == '1' || arr1[0][2] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             }
             else
@@ -81,7 +90,7 @@
             if (arr1[1][0] == '1' || arr1[1][0] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             }
             else
@@ -94,7 +103,7 @@
             if (arr1[1][1] == '1' || arr1[1][1] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             }
             else
@@ -107,7 +116,7 @@
             if (arr1[1][2] == '1' || arr1[1][2] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             }
             else
@@ -120,7 +129,7 @@
             if (arr1[2][0] == '1' || arr1[2][0] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             }
             else
@@ -133,7 +142,7 @@
             if (arr1[2][1] == '1' || arr1[2][1] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             }
             else
@@ -146,7 +155,7 @@
             if (arr1[2][2] == '1' || arr1[2][2] == '0')
             {
                 NSLog(@"%@ put your mark in another position",name);
-                [self addElements:arr1 withNum:num1 playerName:name];
+                [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
                 break;
             }
             else
@@ -157,7 +166,7 @@
             
         default:
             NSLog(@"Entered wrong choice");
-            [self addElements:arr1 withNum:num1 playerName:name];
+            [self addElements:arr1 withNum:num1 playerName:name playerIndex:index];
             break;
     }
     

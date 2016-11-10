@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
         CrossGame *cg = [[CrossGame alloc]init];
         
         char name1[40];
-        char name2[40];
+        //char name2[40];
         
         //Taking user input
         NSLog(@"Enter the Player1 Name");
@@ -21,9 +21,9 @@ int main(int argc, const char * argv[]) {
         NSString *player1 = [NSString stringWithUTF8String:name1];
         
         //Taking user input
-        NSLog(@"Enter thr Player2 Name");
-        scanf("%s",name2);
-        NSString *player2 = [NSString stringWithUTF8String:name2];
+//        NSLog(@"Enter the Player2 Name");
+//        scanf("%s",name2);
+//        NSString *player2 = [NSString stringWithUTF8String:name2];
         
         BOOL flag = YES;
         BOOL flag1 = YES;
@@ -45,7 +45,7 @@ int main(int argc, const char * argv[]) {
             if (flag)
             {
                 NSLog(@"Player 1 :");
-                BOOL flag2 = [cg addElements:ary withNum:'1' playerName:player1];
+                BOOL flag2 = [cg addElements:ary withNum:'1' playerName:player1 playerIndex:1];
                 flag = NO;
                 for (int i=0; i<3; i++)
                 {
@@ -70,8 +70,8 @@ int main(int argc, const char * argv[]) {
             }
             else
             {
-                NSLog(@"Player 2 :");
-                BOOL flag3 = [cg addElements:ary withNum:'0' playerName:player2];
+                NSLog(@"Computer :");
+                BOOL flag3 = [cg addElements:ary withNum:'0' playerName:@"Computer" playerIndex:2];
                 flag = YES;
                 for (int i=0; i<3; i++)
                 {

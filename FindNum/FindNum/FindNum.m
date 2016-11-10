@@ -30,6 +30,7 @@ for(int k=1;k<steps;k++){
     scanf("%d",&value);
     if(value==1){
         N=N/2;
+        //taking the last number as less than 1 than previous
         last = last-((last-first+1)/2);
         
     }

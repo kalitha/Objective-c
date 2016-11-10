@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3AB6021DD0312D00AC258A /* Power.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AB6011DD0312D00AC258A /* Power.m */; };
 		70FDBB431DABB09B006FFEA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FDBB421DABB09B006FFEA5 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A3AB6001DD0312D00AC258A /* Power.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Power.h; path = ../../Power.h; sourceTree = "<group>"; };
+		0A3AB6011DD0312D00AC258A /* Power.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Power.m; path = ../../Power.m; sourceTree = "<group>"; };
 		70FDBB3F1DABB09B006FFEA5 /* leapyear */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leapyear; sourceTree = BUILT_PRODUCTS_DIR; };
 		70FDBB421DABB09B006FFEA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				70FDBB421DABB09B006FFEA5 /* main.m */,
+				0A3AB6001DD0312D00AC258A /* Power.h */,
+				0A3AB6011DD0312D00AC258A /* Power.m */,
 			);
 			path = leapyear;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70FDBB431DABB09B006FFEA5 /* main.m in Sources */,
+				0A3AB6021DD0312D00AC258A /* Power.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +245,7 @@
 				70FDBB481DABB09B006FFEA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

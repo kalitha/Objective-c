@@ -24,15 +24,23 @@ int main(int argc, const char * argv[]) {
             
         }
         if (count==4) {
+            if((year%100)==0){
+                if((year%400)==0)
+                NSLog(@"this is a leap year");
+                else
+                    NSLog(@"Not a leap year");
+            }
     
-            if ((year%4)==0) {
+            else{
+                
+            if((year%4)==0) {
                
             NSLog(@"This is a leap year");
             }
         else
             NSLog(@"Not a leap year");
         }
-        
+    }
         else
             NSLog(@"enter 4 digit year");
        

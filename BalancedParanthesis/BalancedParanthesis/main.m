@@ -15,12 +15,20 @@ int main(int argc, const char * argv[]) {
          char input[20];
          char temp;
         int i;
+        char c;
+        int count;
         NSLog(@"enter the expression");
         scanf("%s",input);
         NSString *s = [NSString stringWithUTF8String:input];
         NSUInteger length=s.length;
+        for(int i=0;i<length;i++){
+            c=[s characterAtIndex:i];
+            if(c=='('||c==')'||c=='{'||c=='}'||c=='['||c==']')
+                
+                count++;
+        }
         
-        
+        if(count%2==0){
         for( i=0; i<length; i++)
       {
              temp = [s characterAtIndex:i];
@@ -63,7 +71,11 @@ int main(int argc, const char * argv[]) {
         [stack check];
         
     }
-
     
+    else{
+        NSLog(@"unbalanced paranthesis");
+    }
+
+    }
     return 0;
 }

@@ -17,8 +17,9 @@ int main(int argc, const char * argv[]) {
         NSLog(@"enter n");
         scanf("%d",&n);
         for (i=2; i<=n; i++) {
+            //checking whether its a factor
             if(n%i==0) {
-                
+                //checking whether it is prime
                 for (j=2; j<=i/2;j++) {
                     if (i%j==0)
                         break;
